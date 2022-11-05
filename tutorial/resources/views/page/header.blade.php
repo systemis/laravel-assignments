@@ -23,7 +23,7 @@
     <div class="header-body">
       <div class="container beta-relative">
         <div class="pull-left">
-          <a href="index.html" id="logo"><img src="/source/assets/dest/images/logo-cake.png" width="200px" alt=""></a>
+          <a href="/" id="logo"><img src="/source/assets/dest/images/logo-cake.png" width="200px" alt=""></a>
         </div>
         <div class="pull-right beta-components space-left ov">
           <div class="space10">&nbsp;</div>
@@ -99,9 +99,9 @@
             <li><a href="index.html">Trang chủ</a></li>
             <li><a href="#">Sản phẩm</a>
               <ul class="sub-menu">
-                <li><a href="product_type.html">Sản phẩm 1</a></li>
-                <li><a href="product_type.html">Sản phẩm 2</a></li>
-                <li><a href="product_type.html">Sản phẩm 4</a></li>
+                @foreach ($productTypes as $type)
+                  <li><a href="/type/{{ $type -> id }}">{{ $type -> name}}</a></li>
+                @endforeach
               </ul>
             </li>
             <li><a href="about.html">Giới thiệu</a></li>
