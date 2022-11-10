@@ -23,7 +23,7 @@
 <body>
   <div class="mx-auto max-w-[1080px]">
     <div class="pt-[100px]">
-      <form method="post" action="" >
+      <form method="POST" action="register" >
         @csrf <!-- {{ csrf_field() }} -->
         <div class="w-[400px] mx-auto">
           <h3 class="text-[30px] mb-[20px]">Register</h3>
